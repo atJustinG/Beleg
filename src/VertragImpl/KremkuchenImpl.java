@@ -71,4 +71,8 @@ public class KremkuchenImpl implements Kremkuchen {
     public int getFachnummer() {
         return fachnummer;
     }
+    
+    public void setInspektionsdatum(Date inspektionsdatum){
+        this.inspektionsdatum = inspektionsdatum;
+    }
 }

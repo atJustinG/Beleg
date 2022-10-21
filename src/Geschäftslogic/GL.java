@@ -1,6 +1,8 @@
 package Geschäftslogic;
 
+import VertragImpl.KremkuchenImpl;
 import vertrag.Kremkuchen;
+import vertrag.Kuchen;
 
 import java.util.Date;
 import java.util.LinkedList;
@@ -10,7 +12,8 @@ public class GL {
     private List<Kremkuchen> kremkuchenList = new LinkedList<>();
 
     public boolean create(Kremkuchen kuchen){
-        throw new UnsupportedOperationException();
+        kremkuchenList.add(kuchen);
+        return true;
     }
 
     public List<Kremkuchen> read(){
@@ -18,10 +21,15 @@ public class GL {
     }
 
     public void update(int fachnummer, Date inspektionsDatum){
-        throw new UnsupportedOperationException();
+//        for (KremkuchenImpl k :
+//                kremkuchenList) {
+//            if(k.getFachnummer() == fachnummer){
+//                k.
+//            }
+//        }
     }
 
     public boolean delete(Kremkuchen kuchen){
-        throw new UnsupportedOperationException();
+        return kremkuchenList.remove(kuchen);
     }
 }
