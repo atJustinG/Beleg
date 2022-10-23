@@ -5,6 +5,10 @@ import vertrag.Verkaufsobjekt;
 import java.math.BigDecimal;
 import java.util.Date;
 
+/**
+ * @author Justin Glowa Matrikelnummer: 573904
+ * Implementierung von Verkaufsobjekt Interface
+ */
 public class VerkaufsobjektImpl implements Verkaufsobjekt {
 
     private BigDecimal preis;

@@ -9,6 +9,10 @@ import java.time.Duration;
 import java.util.Collection;
 import java.util.Date;
 
+/**
+ * @author Justin Glowa Matrikelnummer: 573904
+ * implementierung von Kremkuchen
+ */
 public class KremkuchenImpl implements Kremkuchen {
 
     private String kremsorte;
@@ -20,8 +24,9 @@ public class KremkuchenImpl implements Kremkuchen {
     private Date inspektionsdatum;
     private int fachnummer;
 
+
     public KremkuchenImpl(String kremsorte, Hersteller hersteller, Collection<Allergen> allergene, int naehrwerte,
-                          Duration duration, BigDecimal preis, Date Inspektionsdatum, int fachnummer) {
+                          Duration duration, BigDecimal preis, Date Inspektionsdatum) {
         this.kremsorte = kremsorte;
         this.hersteller = hersteller;
         this.allergene = allergene;
@@ -29,7 +34,6 @@ public class KremkuchenImpl implements Kremkuchen {
         this.duration = duration;
         this.preis = preis;
         this.inspektionsdatum = Inspektionsdatum;
-        this.fachnummer = fachnummer;
     }
 
     @Override
@@ -71,8 +75,20 @@ public class KremkuchenImpl implements Kremkuchen {
     public int getFachnummer() {
         return fachnummer;
     }
-    
+
+    /**
+     * Methode um das Inspektionsdatum zu ändern nicht Teil des Interface
+     * @param inspektionsdatum wird ein neuen inspektionsdatum gesetzt
+     */
     public void setInspektionsdatum(Date inspektionsdatum){
         this.inspektionsdatum = inspektionsdatum;
+    }
+
+    /**
+     *
+     * @param fachnummer sets die neue Fachnummer
+     */
+    public void setFachnummer(int fachnummer) {
+        this.fachnummer = fachnummer;
     }
 }

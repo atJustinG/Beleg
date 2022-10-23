@@ -1,7 +1,11 @@
 package VertragImpl;
 
+
 import vertrag.Hersteller;
 
+/**
+ * @author Justin Glowa Matrikelnummer: 573904
+ */
 public class HerstellerImpl implements Hersteller {
     private String name;
 

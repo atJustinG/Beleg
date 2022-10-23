@@ -7,6 +7,10 @@ import vertrag.Kuchen;
 import java.time.Duration;
 import java.util.Collection;
 
+/**
+ * @author Justin Glowa Matrikelnummer: 573904
+ * Implementierung vom Kuchen Interface
+ */
 public class KuchenImpl implements Kuchen {
 
     private Hersteller hersteller;
